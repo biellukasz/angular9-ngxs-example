@@ -1,4 +1,4 @@
-# Angular9NgxsExample
+# Angular 9 Ngxs Example
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
 

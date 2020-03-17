@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {InventoryService} from './inventory.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular9-ngxs-example';
+  constructor(public inventoryService: InventoryService) {}
+
+  onSubmit({quantity}) {
+    this.inventoryService.add(quantity);
+  }
 }
